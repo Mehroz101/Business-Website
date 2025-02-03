@@ -1,4 +1,14 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHandshake,
+  faLightbulb,
+  faUsers,
+  faLeaf,
+  faAward,
+  faCheckCircle,
+} from "@fortawesome/free-solid-svg-icons"; // Importing relevant icons
+import "../../styles/AboutUsPage.css"; // Importing the CSS file
 
 const AboutUsCoreValues = () => {
   const values = [
@@ -6,87 +16,52 @@ const AboutUsCoreValues = () => {
       title: "Integrity",
       description:
         "We uphold the highest standards of integrity in all our actions.",
+      icon: faHandshake, // Handshake icon for Integrity
     },
     {
       title: "Innovation",
       description: "We embrace change and continuously improve to stay ahead.",
+      icon: faLightbulb, // Lightbulb icon for Innovation
     },
     {
       title: "Customer-Centric",
       description: "Our customers' needs are at the core of everything we do.",
+      icon: faUsers, // Users icon for Customer-Centric
     },
     {
       title: "Collaboration",
       description:
         "We believe in the power of teamwork and collective success.",
+      icon: faHandshake, // Handshake icon for Collaboration
     },
     {
       title: "Sustainability",
       description: "We are committed to environmentally responsible practices.",
+      icon: faLeaf, // Leaf icon for Sustainability
     },
     {
       title: "Excellence",
       description: "We strive for excellence in every project and interaction.",
+      icon: faAward, // Award icon for Excellence
     },
   ];
 
   return (
-    <section style={styles.container}>
-      <h2 style={styles.heading}>Our Core Values</h2>
-      <div style={styles.valuesGrid}>
+    <section className="container">
+      <h2 className="heading">Our Core Values</h2>
+      <div className="valuesGrid">
         {values.map((value, index) => (
-          <div key={index} style={styles.valueCard}>
-            <h3 style={styles.cardTitle}>{value.title}</h3>
-            <p style={styles.cardDescription}>{value.description}</p>
+          <div key={index} className="valueCard">
+            <div className="iconContainer">
+              <FontAwesomeIcon icon={value.icon} size="3x" className="icon" />
+            </div>
+            <h3 className="cardTitle">{value.title}</h3>
+            <p className="cardDescription">{value.description}</p>
           </div>
         ))}
       </div>
     </section>
   );
-};
-
-const styles = {
-  container: {
-    padding: "50px",
-    backgroundColor: "#f9f9f9",
-    borderRadius: "10px",
-    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-    textAlign: "center",
-    margin: "30px 0",
-  },
-  heading: {
-    fontSize: "2rem",
-    fontWeight: "bold",
-    color: "#333",
-    marginBottom: "30px",
-    textTransform: "uppercase",
-  },
-  valuesGrid: {
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))", // Responsive grid layout
-    gap: "20px",
-  },
-  valueCard: {
-    backgroundColor: "#fff",
-    borderRadius: "10px",
-    padding: "20px",
-    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-    transition: "transform 0.3s ease-in-out",
-  },
-  valueCardHovered: {
-    transform: "scale(1.05)", // Hover effect to make the card pop
-  },
-  cardTitle: {
-    fontSize: "1.5rem",
-    fontWeight: "bold",
-    color: "#333",
-    marginBottom: "15px",
-  },
-  cardDescription: {
-    fontSize: "1rem",
-    color: "#555",
-    lineHeight: "1.6",
-  },
 };
 
 export default AboutUsCoreValues;

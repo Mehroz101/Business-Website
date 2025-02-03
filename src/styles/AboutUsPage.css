@@ -1,0 +1,475 @@
+/* AboutUsIntro.css */
+
+/* Base styles */
+.about-us-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background-color: #f4f4f9;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+  }
+  
+  .about-us-text-container {
+    flex: 1;
+    max-width: 50%;
+    margin-right: 40px;
+  }
+  
+  .about-us-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: left;
+    line-height: 1.4;
+  }
+  
+  .about-us-paragraph {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    text-align: left;
+  }
+  
+  .about-us-image-container {
+    flex: 1;
+    max-width: 45%;
+  }
+  
+  .about-us-image {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .about-us-container {
+      flex-direction: column;
+      padding: 40px;
+    }
+  
+    .about-us-text-container {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .about-us-heading {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  
+    .about-us-paragraph {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+  
+    .about-us-image-container {
+      max-width: 100%;
+    }
+  
+    .about-us-image {
+      border-radius: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-us-container {
+      padding: 20px;
+    }
+  
+    .about-us-heading {
+      font-size: 2rem;
+    }
+  
+    .about-us-paragraph {
+      font-size: 1rem;
+    }
+  
+    .about-us-image {
+      border-radius: 8px;
+    }
+  }
+  
+
+  /* AboutUsMission.css */
+
+/* Base Styles */
+.about-us-mission-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  .about-us-mission-text-container {
+    margin-bottom: 40px;
+  }
+  
+  .about-us-mission-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+  }
+  
+  .about-us-mission-paragraph {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  .about-us-mission-image-container {
+    max-width: 80%;
+    margin-top: 30px;
+  }
+  
+  .about-us-mission-image {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .about-us-mission-container {
+      padding: 40px;
+    }
+  
+    .about-us-mission-heading {
+      font-size: 2rem;
+    }
+  
+    .about-us-mission-paragraph {
+      font-size: 1.1rem;
+    }
+  
+    .about-us-mission-image-container {
+      max-width: 100%;
+    }
+  
+    .about-us-mission-image {
+      border-radius: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-us-mission-container {
+      padding: 20px;
+    }
+  
+    .about-us-mission-heading {
+      font-size: 1.75rem;
+    }
+  
+    .about-us-mission-paragraph {
+      font-size: 1rem;
+    }
+  }
+
+  
+
+  /* AboutUsCoreValues.css */
+
+.container {
+    padding: 50px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  .valuesGrid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); Responsive grid layout */
+    gap: 20px;
+  }
+  
+  .valueCard {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px; /* More padding for the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    max-width: 350px;
+  }
+  
+  .valueCard:hover {
+    transform: scale(1.05); /* Hover effect to make the card pop */
+  }
+  
+  .iconContainer {
+    margin-bottom: 20px; /* Space between icon and title */
+    background-color: #4caf50; /* Background color for icons */
+    border-radius: 50%;
+    padding: 15px;
+    display: inline-block;
+  }
+  
+  .icon {
+    color: #fff; /* White color for the icon */
+  }
+  
+  .cardTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .cardDescription {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* AboutUsTeam.css */
+
+/* Base Styles */
+.about-us-team-container {
+    padding: 60px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .about-us-team-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  .about-us-team-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .about-us-team-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    min-width: 300px; /* Adjust for smaller screens */
+}
+  
+  .about-us-team-card:hover {
+    transform: translateY(-10px); /* Slight hover effect */
+  }
+  
+  .about-us-team-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .about-us-team-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .about-us-team-role {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .about-us-team-heading {
+      font-size: 2rem;
+    }
+  
+    .about-us-team-card {
+        min-width: 300px; /* Adjust for smaller screens */
+      padding: 20px;
+    }
+  
+    .about-us-team-grid {
+      gap: 25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-us-team-heading {
+      font-size: 1.75rem;
+    }
+  
+    .about-us-team-card {
+        min-width: 300px; /* Adjust for smaller screens */
+        padding: 15px;
+    }
+  
+    .about-us-team-grid {
+      gap: 20px;
+    }
+  }
+
+  
+/* AboutUsServices.css */
+
+.about-services {
+    padding: 50px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .services-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  .services-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05); /* Hover effect to make the card pop */
+  }
+  
+  .icon-container {
+    font-size: 2.5rem;
+    margin-bottom: 20px; /* Space between icon and title */
+    /* background-color: #4caf50; Background color for icons */
+    border-radius: 50%;
+    padding: 20px;
+    color: #fff; /* White color for the icon */
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+
+  /* AboutUsTestimonials.css */
+
+.about-testimonials-container {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+  }
+  
+  .about-testimonials-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  .carousel-container {
+    margin: 0 auto;
+  }
+  
+  /* Testimonial card */
+  .testimonial-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    margin: 0 10px;
+    height: 100%;
+  }
+  
+  .avatar-container {
+    margin-bottom: 15px;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  
+  .feedback {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .position {
+    font-size: 1rem;
+    color: #777;
+  }
+  

@@ -1,0 +1,95 @@
+.footer {
+    background-color: rgb(35 35 35);
+    padding: 40px 100px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .topSection {
+    margin-bottom: 30px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .tagline {
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Anton', serif;
+  }
+  
+  .supportingText {
+    color: rgb(219 219 219);
+    margin-bottom: 15px;
+  }
+  
+  .button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+  .middleSection {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 20px 0;
+  }
+  
+  .menuSection {
+    flex: 1;
+    min-width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .menuTitle {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .menuList {
+    list-style: none;
+    padding: 4px 0;
+    font-size: 12px;
+  }
+  
+  .emailSection {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+    font-size: 14px;
+    background-color: transparent;
+  }
+  
+  .bottomSection {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+  .companyName {
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  @media screen and (max-width: 768px) {
+    .footer{
+      padding: 40px 20px;
+    }
+  }
+  

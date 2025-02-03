@@ -1,0 +1,932 @@
+/* ===========================
+   Global / Base Styles
+   =========================== */
+
+/* Banner Container */
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .banner-text {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0 10px;
+    max-width: 660px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  .banner-subtext {
+    color: #ddd;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-top: 10px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .banner-cta {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .banner-cta:hover {
+    background-color: #066d31;
+    transform: scale(1.1);
+  }
+  
+  /* Services Section */
+  .services-section {
+    padding: 60px 20px;
+    background-color: #f0f5f5;
+    text-align: center;
+  }
+  
+  .services-header {
+    margin-bottom: 40px;
+  }
+  
+  .services-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .services-subheading {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .service-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 350px;
+    min-width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-icon {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .service-icon img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .arrow-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: color 0.3s, transform 0.3s ease;
+  }
+  
+  .arrow-btn:hover {
+    transform: translateX(5px);
+    color: #008c99;
+  }
+  
+  /* Stats Section */
+  .stats-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .stats-heading {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 2.5rem;
+  }
+  
+  .stats-subtext {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  
+  .stat-box {
+    text-align: center;
+  }
+  
+  .stat-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  .stat-label {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* About Us Services Section */
+  .about-services {
+    padding: 50px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  /* For About Us, using .about-services .services-heading to differentiate */
+  .about-services .services-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  .services-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Service Card (for About Us section) */
+  .service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icon-container {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Why Choose Us Section */
+  .why-choose-section {
+    padding: 60px 20px 300px;
+    background-color: rgb(243, 255, 255);
+    text-align: center;
+  }
+  
+  .why-choose-top {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .why-choose-left {
+    min-width: 400px;
+  }
+  
+  .why-choose-right {
+    text-align: left;
+    max-width: 800px;
+    min-width: 400px;
+  }
+  
+  .why-choose-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .why-choose-text {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .why-choose-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .why-choose-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 280px;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .why-choose-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .why-choose-icon img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .why-choose-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .why-choose-description {
+    font-size: 1rem;
+    color: #777;
+    line-height: 1.5;
+  }
+  
+  /* Quote Section */
+  .quote-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .quote-section .card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    max-width: 1000px;
+    flex-wrap: wrap;
+    margin-top: -250px;
+  }
+  
+  .left-side {
+    flex: 1;
+    padding: 100px 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 250px;
+  }
+  
+  .quote-section .left-top {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .quote-section .subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  
+  .quote-section .heading {
+    font-family: "Anton", serif;
+    margin: 0;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .quote-section .text {
+    font-size: 1rem;
+    color: #666;
+    text-align: left;
+    line-height: 1.6;
+  }
+  
+  .left-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .left-bottom-item {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .left-bottom-icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+  }
+  
+  .left-bottom-icon {
+    color: #fff;
+  }
+  
+  .left-bottom-text {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  .right-side {
+    flex: 1;
+    padding: 40px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+  }
+  
+  .right-side .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .right-side .input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .right-side .textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    resize: vertical;
+    height: 150px;
+  }
+  
+  .right-side .submit-button {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+  }
+  
+  /* Reviews Section */
+  .reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 10px;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 50px;
+  }
+  
+  .review-box {
+    border-radius: 4px;
+    max-width: 450px;
+    resize: vertical;
+    min-height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .review-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .review-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .review-person {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .review-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .review-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  /* Carousel Specific Styles */
+  .reviews-carousel-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 50px;
+    padding: 10px;
+  }
+  
+  .reviews-carousel .p-carousel-container {
+    overflow: hidden;
+  }
+  
+  .reviews-carousel .p-carousel-items {
+    gap: 20px;
+  }
+  
+  /* ===========================
+     Consolidated Responsive Media Queries
+     =========================== */
+  @media (max-width: 1024px) {
+    /* Banner Adjustments */
+    .banner-text {
+      font-size: 2.5rem;
+    }
+    .banner-subtext {
+      font-size: 1.1rem;
+    }
+    
+    /* Services Section */
+    .services-heading {
+      font-size: 2.2rem;
+    }
+    .services-subheading {
+      font-size: 1.1rem;
+    }
+    
+    /* Stats Section */
+    .stats-heading {
+      font-size: 2.2rem;
+    }
+    .stats-subtext {
+      font-size: 1.1rem;
+    }
+    .stat-number {
+      font-size: 32px;
+    }
+    .stat-label {
+      font-size: 15px;
+    }
+    
+    /* About Us Services Section */
+    .about-services .services-heading {
+      font-size: 1.8rem;
+    }
+    
+    /* Why Choose Us Section */
+    .why-choose-heading {
+      font-size: 2.2rem;
+    }
+    .why-choose-text {
+      font-size: 1.1rem;
+    }
+    .why-choose-card {
+      max-width: 320px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Banner Adjustments */
+    .banner-text {
+      font-size: 2rem;
+    }
+    .banner-subtext {
+      font-size: 1rem;
+      max-width: 90%;
+    }
+    .banner-cta {
+      padding: 10px 25px;
+      font-size: 1rem;
+    }
+    
+    /* Services Section */
+    .services-heading {
+      font-size: 2rem;
+    }
+    .services-subheading {
+      font-size: 1rem;
+      max-width: 90%;
+    }
+    .service-box {
+      max-width: 90%;
+    }
+    
+    /* Stats Section */
+    .stats-heading {
+      font-size: 2rem;
+    }
+    .stats-subtext {
+      font-size: 1rem;
+      max-width: 90%;
+    }
+    .stat-box {
+      width: 50%;
+    }
+    
+    /* Why Choose Us Section */
+    .why-choose-heading {
+      font-size: 2rem;
+    }
+    .why-choose-text {
+      font-size: 1rem;
+      max-width: 70%;
+      margin: auto;
+    }
+    .why-choose-card {
+      max-width: 100%;
+      padding: 20px;
+    }
+    
+    /* Quote Section Adjustments */
+    .card {
+      flex-direction: column;
+      margin-top: 0;
+    }
+    .reviews {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .left-bottom-text {
+      font-size: 0.8rem;
+    }
+    .quote-section .text {
+      font-size: 0.8rem;
+    }
+    .review-box {
+      max-width: 100%;
+    }
+    .left-side {
+      padding: 20px;
+    }
+    .right-side {
+      padding: 20px;
+    }
+    .right-side .input {
+      font-size: 0.8rem;
+    }
+    .reviews-carousel .p-carousel-items {
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Banner Adjustments */
+    .banner-container {
+      height: 70vh;
+    }
+    .banner-text {
+      font-size: 1.8rem;
+    }
+    .banner-subtext {
+      font-size: 0.9rem;
+    }
+    .banner-cta {
+      padding: 8px 20px;
+      font-size: 0.9rem;
+    }
+    
+    /* Services Section */
+    .services-section {
+      padding: 40px 15px;
+    }
+    .services-heading {
+      font-size: 1.8rem;
+    }
+    .services-subheading {
+      font-size: 0.9rem;
+    }
+    .service-box {
+      padding: 20px;
+    }
+    .arrow-btn {
+      font-size: 1.3rem;
+    }
+    
+    /* Stats Section */
+    .stats-section {
+      padding: 40px 15px;
+    }
+    .stats-heading {
+      font-size: 1.8rem;
+    }
+    .stats-subtext {
+      font-size: 0.9rem;
+    }
+    .stat-number {
+      font-size: 28px;
+    }
+    .stat-label {
+      font-size: 14px;
+    }
+    .stat-box {
+      width: 100%;
+    }
+    
+    /* About Us Services Section */
+    .about-services {
+      padding: 30px 15px;
+    }
+    .services-heading {
+      font-size: 1.4rem;
+    }
+    .service-description {
+      font-size: 0.9rem;
+    }
+    
+    /* Why Choose Us Section */
+    .why-choose-section {
+      padding: 40px 15px;
+    }
+    .why-choose-heading {
+      font-size: 1.6rem;
+    }
+    .why-choose-text {
+      font-size: 0.9rem;
+    }
+    .why-choose-description {
+      font-size: 0.8rem;
+    }
+  }
+  /* Our Projects Section */
+.our-projects-section {
+  width: 100%;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.heading-container {
+  width: 100%;
+  display: flex ;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.subheading {
+  font-size: 1rem;
+  color: #777;
+  margin: 0;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin: 5px 0 0;
+}
+
+.carousel-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Carousel Arrow Buttons */
+.arrow-btn {
+  background-color: var(--primary-color, #00bcd4);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.arrow-btn:hover {
+  background-color: #008c99;
+}
+
+/* Projects Carousel Container */
+.projects-carousel {
+  width: 100%;
+  height: 500px;  /* Set height to approximately 500px */
+  margin: 0 auto;
+}
+
+/* Project Card */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  /* border-radius: 10px; */
+  height: 100%; /* Ensure cards take full available height */
+}
+.p-carousel-container{
+  height: 500px;
+}
+.p-carousel-items-container{
+  height: 100%;
+}
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.1);
+}
+
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 16px; /* Use minimal padding so the overlay doesn't become too tall */
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  opacity: 0;
+  display: inline-flex;  /* Inline-flex ensures the height is only as tall as its content */
+  align-items: center;    /* Align items along the baseline (or flex-start) */
+  justify-content: space-between;
+  transition: opacity 0.3s ease;
+  height: 100%;  /* Ensure the height is auto so it only wraps its content */
+  line-height: 1.2;
+}
+
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.project-arrow {
+  font-size: 1.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .main-heading {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .carousel-controls {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 1.75rem;
+  }
+  .arrow-btn {
+    width: 40px;
+    height: 40px;
+  }
+}

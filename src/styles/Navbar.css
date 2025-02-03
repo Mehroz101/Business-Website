@@ -1,79 +1,106 @@
 /* Navbar Container */
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 50px;
-    background: #ffffff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-  }
-  
-  /* Logo */
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  /* Navigation Links */
-  .nav-links {
-    display: flex;
-    gap: 25px;
-    list-style: none;
-  }
-  
-  .nav-links li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links li a:hover {
-    color: rgb(0, 188, 212);
-  }
-  
-  /* CTA Button */
-  .cta-btn {
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 0;
-  }
-  .cta-btn .icon{
-    color: rgb(0, 188, 212);
-    font-size: 25px;
-  }
-  .cta-btn p {
-    display: flex;
-    flex-direction: column;
-  }
-  .cta-btn p .number{
-    font-weight: 600;
-    color: rgb(0, 188, 212);
-    border-bottom: 1px dotted rgb(0, 188, 212);
-  }
-  
-  /* Mobile Menu Icon */
-  .menu-icon {
-    font-size: 26px;
-    cursor: pointer;
-    display: none;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Right-side menu */
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex: 1;
+  margin: 0;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: flex-end;
+}
+.logo img {
+  max-width: 250px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #02943F;
+}
+
+/* CTA Button (Desktop & Mobile) */
+.cta-btn {
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 10px;
+  background: none;
+}
+
+.cta-btn .icon {
+  color: #02943F;
+  font-size: 25px;
+}
+
+.cta-btn p {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-btn p .number {
+  font-weight: 600;
+  color: #02943F;
+  border-bottom: 1px dotted #02943F;
+}
+
+/* Desktop Call Button */
+.desktop-only {
+  display: flex;
+  padding: 0;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+  font-size: 26px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Hide nav links initially */
+  .nav-right {
       display: none;
       flex-direction: column;
       position: absolute;
@@ -83,19 +110,48 @@
       background: #fff;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
       padding: 20px 0;
-    }
-  
-    .nav-links.open {
-      display: flex;
-    }
-  
-    .nav-links li {
-      text-align: center;
-      padding: 10px 0;
-    }
-  
-    .menu-icon {
-      display: block;
-    }
   }
-  
+
+  .nav-right.open {
+      display: flex;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+      padding: 0;
+  }
+
+  .nav-links li {
+      padding: 10px 0;
+  }
+
+  .mobile-only {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      padding: 0;
+      text-align: center;
+  }
+
+  .mobile-only .icon {
+      margin-right: 10px;
+  }
+
+  .mobile-only .number {
+      font-weight: bold;
+      border-bottom: 1px dotted #fff;
+  }
+
+  /* Hide desktop call button */
+  .desktop-only {
+      display: none;
+  }
+
+  /* Show menu icon */
+  .menu-icon {
+      display: block;
+  }
+}
