@@ -796,22 +796,23 @@
   width: 100%;
   display: flex ;
   flex-direction: column;
-  gap: 10px;
   justify-content: center;
   align-items: center;
 }
 
 .subheading {
-  font-size: 1rem;
-  color: #777;
-  margin: 0;
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .main-heading {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 600;
+  margin-bottom: 10px;
   color: #333;
-  margin: 5px 0 0;
+  font-size: 2.5rem;
+  margin-top: 10px;
 }
 
 .carousel-controls {
@@ -852,10 +853,10 @@
   /* border-radius: 10px; */
   height: 100%; /* Ensure cards take full available height */
 }
-.p-carousel-container{
+.our-projects-section .p-carousel-container{
   height: 500px;
 }
-.p-carousel-items-container{
+.our-projects-section .p-carousel-items-container{
   height: 100%;
 }
 .project-image {

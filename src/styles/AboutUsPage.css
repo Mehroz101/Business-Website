@@ -9,8 +9,8 @@
     padding: 60px;
     background-color: #f4f4f9;
     border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    margin: 40px 0;
+    /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); */
+    /* margin: 40px 0; */
   }
   
   .about-us-text-container {
@@ -109,8 +109,8 @@
     padding: 60px;
     background-color: #ffffff;
     border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    margin: 40px 0;
+    /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); */
+    /* margin: 40px 0; */
     text-align: center;
   }
   
@@ -189,9 +189,9 @@
     padding: 50px;
     background-color: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     text-align: center;
-    margin: 30px 0;
+    /* margin: 30px 0; */
   }
   
   .heading {
@@ -257,9 +257,9 @@
     padding: 60px;
     background-color: #f9f9f9;
     border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); */
     text-align: center;
-    margin: 40px 0;
+    /* margin: 40px 0; */
   }
   
   .about-us-team-heading {
@@ -351,9 +351,9 @@
     padding: 50px;
     background-color: #f4f4f4;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     text-align: center;
-    margin: 30px 0;
+    /* margin: 30px 0; */
   }
   
   .services-heading {
@@ -415,8 +415,8 @@
     background-color: #f9f9f9;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 30px 0;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    /* margin: 30px 0; */
   }
   
   .about-testimonials-heading {

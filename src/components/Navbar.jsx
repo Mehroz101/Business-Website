@@ -34,8 +34,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to={"/services"} onClick={() => setMenuOpen(!menuOpen)}>
-              Services
+            <Link to={"/projectview"} onClick={() => setMenuOpen(!menuOpen)}>
+              Project
             </Link>
           </li>
           <li>

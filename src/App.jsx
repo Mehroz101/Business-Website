@@ -5,6 +5,7 @@ import {
   Home,
   Layout,
   Login,
+  ProjectView,
   ProtectedRoute,
   Setting,
   Signup,
@@ -66,6 +67,7 @@ function AppRoutes() {
       <Route path="/" element={<ProtectedRoute element={<Layout />} />}>
         <Route index element={<Home />} />
         <Route path={ROUTES.ABOUTUS} element={<AboutUs />} />
+        <Route path={ROUTES.PROJECTVIEW} element={<ProjectView />} />
         <Route path={ROUTES.SETTING} element={<Setting />} />
       </Route>
     </Routes>

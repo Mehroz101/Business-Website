@@ -3,6 +3,7 @@ export const ROUTES = {
   SIGNUP: "/signup",
   HOME: "/home",
   ABOUTUS: "/aboutus",
+  PROJECTVIEW: "/projectview",
   USERS: "/users",
   SETTING: "/setting",
 };
