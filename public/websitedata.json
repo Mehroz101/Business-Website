@@ -5,7 +5,7 @@
       "tagline": " Empower Your Business with Expert Consulting",
       "description": "Unlock new opportunities and scale your business with our professional guidance.",
       "facebook_link": "https://www.facebook.com/yourpage",
-      "background_image":"../src/assets/bannerImg.jpg",
+      "background_image": "../src/assets/bannerImg.jpg",
       "twitter_link": "https://www.twitter.com/yourpage",
       "linkdin_link": "https://www.linkedin.com/yourpage",
       "instagram_link": "https://www.instagram.com/yourpage"
@@ -36,43 +36,46 @@
         }
       ]
     },
-    "Achievements_section":{
-      "title":"Our Achievements",
-      "description":"We pride ourselves on delivering exceptional results and exceeding expectations for our clients.",
-      "achievements":[
+    "Achievements_section": {
+      "title": "Our Achievements",
+      "description": "We pride ourselves on delivering exceptional results and exceeding expectations for our clients.",
+      "achievements": [
         {
-          "title":"100+",
-          "description":"Projects Completed"
+          "title": "100+",
+          "description": "Projects Completed"
         },
         {
-          "title":"5+",
-          "description":"Years of Experience"
+          "title": "5+",
+          "description": "Years of Experience"
         },
         {
-          "title":"100%",
-          "description":"Client Satisfaction"
+          "title": "100%",
+          "description": "Client Satisfaction"
         },
         {
-          "title":"50+",
-          "description":"Team Members"
+          "title": "50+",
+          "description": "Team Members"
         }
       ]
     },
-    "Projects_section":{
-      "title":"Our Work",
-      "description":"We have successfully delivered a wide range of projects that have made a difference in the lives of our clients.",
-      "projects":[
+    "Projects_section": {
+      "title": "Our Work",
+      "description": "We have successfully delivered a wide range of projects that have made a difference in the lives of our clients.",
+      "projects": [
         {
-          "name":"Hospital Management System",
-          "image":"../src/assets/project1.jpg"
-        }  ,
-        {
-          "name":"Liabrary Management System",
-          "image":"../src/assets/project2.jpg"
+          "id": "1",
+          "name": "Hospital Management System",
+          "image": "../src/assets/project1.jpg"
         },
         {
-          "name":"Student Management System",
-          "image":"../src/assets/project3.jpg"
+          "id": "2",
+          "name": "Liabrary Management System",
+          "image": "../src/assets/project2.jpg"
+        },
+        {
+          "id": "3",
+          "name": "Student Management System",
+          "image": "../src/assets/project3.jpg"
         }
       ]
     },
@@ -80,91 +83,168 @@
       "title": "Why Choose Us",
       "description": "Why choose us for your business needs?",
       "why_choose_us": [
-       {
-        "icon":"../src/assets/experience.png",
-         "title": "Expertise",
-         "description": "We have a team of experienced professionals who are passionate about what they do."
-       },
-       {
-        "icon":"../src/assets/customize.png",
-         "title": "Customization",
-         "description": "We tailor our services to meet the unique needs of our clients."
-       },
-       {
-         "icon": "../src/assets/badge.png",
-         "title": "Quality",
-         "description": "We prioritize quality in all of our services and products."
-       },
-       {
-        "icon":"../src/assets/help-desk.png",
-         "title": "Customer Support",
-         "description": "We provide 24/7 customer support to help with all your needs."
-       },
-       {
-        "icon":"../src/assets/shield.png",
-         "title": "Security",
-         "description": "We ensure the highest level of security in all our services."
-       },
-       {
-        "icon":"../src/assets/partners.png",
-         "title": "Collaboration",
-         "description": "We believe in the power of teamwork and collective success."
-       }
+        {
+          "icon": "../src/assets/experience.png",
+          "title": "Expertise",
+          "description": "We have a team of experienced professionals who are passionate about what they do."
+        },
+        {
+          "icon": "../src/assets/customize.png",
+          "title": "Customization",
+          "description": "We tailor our services to meet the unique needs of our clients."
+        },
+        {
+          "icon": "../src/assets/badge.png",
+          "title": "Quality",
+          "description": "We prioritize quality in all of our services and products."
+        },
+        {
+          "icon": "../src/assets/help-desk.png",
+          "title": "Customer Support",
+          "description": "We provide 24/7 customer support to help with all your needs."
+        },
+        {
+          "icon": "../src/assets/shield.png",
+          "title": "Security",
+          "description": "We ensure the highest level of security in all our services."
+        },
+        {
+          "icon": "../src/assets/partners.png",
+          "title": "Collaboration",
+          "description": "We believe in the power of teamwork and collective success."
+        }
       ]
     },
     "quote_section": {
       "small_text": "How it works",
       "title": "Get a Custom Quote",
-      "description":" Fill out the form below and we'll get back to you within 24 hours. We value your time and will respond as soon as possible.",
-      "quote_boxs":[
+      "description": " Fill out the form below and we'll get back to you within 24 hours. We value your time and will respond as soon as possible.",
+      "quote_boxs": [
         {
-          "icon":"../src/assets/shuttle.png",
-          "title":"Boost Your Business",
-          "description":"Efficient, scalable, and custom management software tailored to your needs. Let's build something great!"
+          "icon": "../src/assets/shuttle.png",
+          "title": "Boost Your Business",
+          "description": "Efficient, scalable, and custom management software tailored to your needs. Let's build something great!"
         },
         {
-          "icon":"../src/assets/robotic-process.png",
-          "title":"Automate & Grow",
-          "description":"Fill out the form below and we'll get back to you within 24 hours. We value your time and will respond as soon as possible."
+          "icon": "../src/assets/robotic-process.png",
+          "title": "Automate & Grow",
+          "description": "Fill out the form below and we'll get back to you within 24 hours. We value your time and will respond as soon as possible."
         },
         {
-          "icon":"../src/assets/optimize.png",
-          "title":"Custom Solutions for Your Needs", 
-          "description":"Efficient, scalable, and custom management software tailored to your needs. Let's build something great!"
+          "icon": "../src/assets/optimize.png",
+          "title": "Custom Solutions for Your Needs",
+          "description": "Efficient, scalable, and custom management software tailored to your needs. Let's build something great!"
         }
       ],
-      "reviews" :[
+      "reviews": [
         {
-          "image":"../src/assets/client1.png",
-          "name":"John Doe",
-          "review":"This company has completely transformed our business operations. Highly recommend their services!"
+          "image": "../src/assets/client1.png",
+          "name": "John Doe",
+          "review": "This company has completely transformed our business operations. Highly recommend their services!"
         },
         {
-          "image":"../src/assets/client2.png",
-          "name":"Jane Smith",
-          "review":" I am extremely impressed with the level of service provided by this company. They have exceeded my expectations. I highly recommend them!"
+          "image": "../src/assets/client2.png",
+          "name": "Jane Smith",
+          "review": " I am extremely impressed with the level of service provided by this company. They have exceeded my expectations. I highly recommend them!"
         },
         {
-          "image":"../src/assets/client3.png",
-          "name":"Bob Johnson",
-          "review":" I had a great experience with this company. They provided excellent customer support and helped me solve my issues quickly. I would definitely use them again!"
+          "image": "../src/assets/client3.png",
+          "name": "Bob Johnson",
+          "review": " I had a great experience with this company. They provided excellent customer support and helped me solve my issues quickly. I would definitely use them again!"
         }
       ]
     },
-    "client_section":{
-      "clients":[
+    "client_section": {
+      "clients": [
         {
-          "image":"../src/assets/client1.png"
+          "image": "../src/assets/client1.png"
         },
         {
-          "image":"../src/assets/client2.png"
+          "image": "../src/assets/client2.png"
         },
         {
-          "image":"../src/assets/client3.png"
+          "image": "../src/assets/client3.png"
         }
-
       ]
     }
-
+  },
+  "aboutuspage": {
+    "aboutusintro_section": {
+      "title": "Welcome to Our Company",
+      "description": "We are a forward-thinking company dedicated to providing innovative solutions that empower our clients and create positive change. With a rich history and a passion for excellence, we strive to deliver exceptional products and services that meet the evolving needs of today’s world.",
+      "image": "../src/assets/bannerImg.jpg"
+    },
+    "ourmission_section": {
+      "title": "Our Mission",
+      "description": "Our mission is to revolutionize the industry by offering cutting-edge products and services that are not only innovative but also socially responsible. We aim to exceed customer expectations by fostering a culture of excellence and continuous improvement.",
+      "image": "../src/assets/bannerImg.jpg"
+    }
+  },
+  "projects": {
+    "title": "Our Work",
+    "description": "Check it Out",
+    "project": [
+      {
+        "id": "1",
+        "title": "Project Management System",
+        "banner_img": "https://projectsly.com/images/blog/project-management-system-overview.png?v=1670514978795773617",
+        "main_img": "https://projectsly.com/images/blog/project-management-system-overview.png?v=1670514978795773617",
+        "paragraph": "A powerful project management system that helps teams plan, track, and collaborate efficiently. Features include task automation, progress tracking, and real-time reporting.",
+        "features": [
+          { "title": "20+ pages" },
+          { "title": "Customizable components" },
+          { "title": "300+ APIs" }
+        ],
+        "services": "Complete setup, support and maintenance, updates",
+        "clients": "20+",
+        "Collaborators": "3"
+      },
+      {
+        "id": "2",
+        "title": "Inventory Management System",
+        "banner_img": "https://d2ms8rpfqc4h24.cloudfront.net/Inventory_Management_System_Guide_371bf8be3a.jpg",
+        "main_img": "https://d2ms8rpfqc4h24.cloudfront.net/Inventory_Management_System_Guide_371bf8be3a.jpg",
+        "paragraph": "An advanced inventory management system designed to help businesses track stock levels, sales, and deliveries efficiently. Includes barcode scanning, real-time alerts, and detailed analytics.",
+        "features": [
+          { "title": "Real-time stock updates" },
+          { "title": "Multi-warehouse support" },
+          { "title": "Automated restocking alerts" }
+        ],
+        "services": "Implementation, training, ongoing support",
+        "clients": "15+",
+        "Collaborators": "5"
+      },
+      {
+        "id": "3",
+        "title": "HR & Payroll System",
+        "banner_img": "https://solutiondots.com/wp-content/uploads/2023/10/HR-Payroll-min-1.jpg",
+        "main_img": "https://solutiondots.com/wp-content/uploads/2023/10/HR-Payroll-min-1.jpg",
+        "paragraph": "A complete HR & Payroll system to automate employee records, salary processing, tax calculations, and compliance management. Simplifies HR operations for businesses of all sizes.",
+        "features": [
+          { "title": "Automated payroll processing" },
+          { "title": "Employee self-service portal" },
+          { "title": "Tax & compliance management" }
+        ],
+        "services": "Integration, customization, 24/7 support",
+        "clients": "30+",
+        "Collaborators": "4"
+      },
+      {
+        "id": "4",
+        "title": "E-commerce Management System",
+        "banner_img": "https://i0.wp.com/www.temok.com/blog/wp-content/uploads/2023/11/E-Commerce-Management.webp?fit=750%2C500&ssl=1",
+        "main_img": "https://i0.wp.com/www.temok.com/blog/wp-content/uploads/2023/11/E-Commerce-Management.webp?fit=750%2C500&ssl=1",
+        "paragraph": "A full-featured e-commerce management system to handle orders, inventory, payments, and customer interactions. Designed for scalability and high performance.",
+        "features": [
+          { "title": "Multi-vendor support" },
+          { "title": "Secure payment gateways" },
+          { "title": "SEO & marketing tools" }
+        ],
+        "services": "Deployment, security updates, performance optimization",
+        "clients": "50+",
+        "Collaborators": "6"
+      }
+    ]
+    
   }
 }

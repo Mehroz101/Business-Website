@@ -68,7 +68,7 @@ function AppRoutes() {
       <Route path="/" element={<ProtectedRoute element={<Layout />} />}>
         <Route index element={<Home />} />
         <Route path={ROUTES.ABOUTUS} element={<AboutUs />} />
-        <Route path={ROUTES.PROJECTVIEW} element={<ProjectView />} />
+        <Route path={`${ROUTES.PROJECTVIEW}/:id`} element={<ProjectView />} />
         <Route path={ROUTES.CONTACT} element={<Contact />} />
       </Route>
     </Routes>

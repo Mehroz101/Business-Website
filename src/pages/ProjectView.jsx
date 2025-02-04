@@ -1,87 +1,80 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import bannerImg from "../assets/bannerImg.jpg";
 import "../styles/ProjectView.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Facebook, Linkedin, Twitter } from "lucide-react";
+import { useParams } from "react-router-dom";
 
 const ProjectView = () => {
+  const [projectdata, setProjectData] = useState([]);
+  const { id } = useParams();
+  useEffect(() => {
+    if (id) {
+      const fetchData = async () => {
+        try {
+          const response = await fetch(
+            `http://localhost:5173/websitedata.json`
+          );
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          const websitedata = await response.json();
+          const projectData = websitedata?.projects?.project?.filter(
+            (project) => {
+              return project.id === id;
+            }
+          );
+          if (projectData) {
+            setProjectData(projectData[0]);
+            console.log(projectData[0]);
+          }
+        } catch (error) {
+          console.error("Error fetching data:", error);
+        }
+      };
+
+      fetchData();
+    }
+  }, [id]);
   return (
     <>
       <div className="project_view" style={{ paddingTop: "70px" }}>
         <div
           className="project_banner"
-          style={{ backgroundImage: `url(${bannerImg})` }}
+          style={{ backgroundImage: `url(${projectdata.banner_img})` }}
         >
           <div className="banner-overlay">
-            <h1>EDU Pharmacy</h1>
+            <h1>{projectdata.title}</h1>
           </div>
         </div>
         <div className="project_img_section">
-          <img
-            src="https://cloudinary.hbs.edu/hbsit/image/upload/s--O0PXWnT3--/f_auto,c_fill,h_375,w_750,/v20200101/BDD0688FF02068E5C427B0954F8A2297.jpg"
-            alt="Project"
-          />
+          <img src={projectdata.main_img} alt="Project" />
         </div>
         <div className="project_desciption">
           <div className="desciption_left">
             <h1>Project Name</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-              voluptas, quae quia, quod quibusdam quidem quia quos quas
-              quibusdam quidem quia quos quas quibusdam quidem quia quos quas
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-              voluptas, quae quia, quod quibusdam quidem quia quos quas
-              quibusdam quidem quia quos quas quibusdam quidem quia quos quas
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-              voluptas, quae quia, quod quibusdam quidem quia quos quas
-              quibusdam quidem quia quos quas quibusdam quidem quia quos quas
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-              voluptas, quae quia, quod quibusdam quidem quia quos quas
-              quibusdam quidem quia quos quas quibusdam quidem quia quos quas
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-              voluptas, quae quia, quod quibusdam quidem quia quos quas
-              quibusdam quidem quia quos quas quibusdam quidem quia quos quas
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-              voluptas, quae quia, quod quibusdam quidem quia quos quas
-              quibusdam quidem quia quos quas quibusdam quidem quia quos quas
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-              voluptas, quae quia, quod quibusdam quidem quia quos quas
-              quibusdam quidem quia quos quas quibusdam quidem quia quos quas
-            </p>
+            <p>{projectdata.paragraph}</p>
             <h3>Features</h3>
             <ul>
-              <li>Lorem ipsum dolor sit amet.</li>
-              <li>Lorem ipsum dolor sit.</li>
-              <li>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</li>
-              <li>Lorem ipsum dolor sit amet sit amet. Lorem .</li>
-              <li>Lorem ipsumt amet.</li>
-              <li>Lorem ipsum dolor sit amet.</li>
-              <li>Lorem ipsum sit amet.</li>
+              {projectdata?.features?.map((feature, index) => {
+                return <li key={index}>{feature.title}</li>;
+              })}
             </ul>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-              voluptas, quae quia, quod quibusdam quidem quia quos quas
-              quibusdam quidem quia quos quas quibusdam quidem quia quos quas
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-              voluptas, quae quia, quod quibusdam quidem quia quos quas
-              quibusdam quidem quia quos quas quibusdam quidem quia quos quas
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-            </p>
           </div>
 
           <div className="desciption_right">
             <h1>Project Details</h1>
             <div className="description_right_box">
               <h3>Services</h3>
-              <p>Complete setup, support and maintenance, updates</p>
+              <p>{projectdata.services}</p>
             </div>
             <div className="description_right_box">
               <h3>Clients</h3>
-              <p>23</p>
+              <p>{projectdata.clients}</p>
             </div>
             <div className="description_right_box">
               <h3>Collaborators</h3>
-              <p>2</p>
+              <p>{projectdata.Collaborators}</p>
             </div>
             <div className="description_right_social">
               <h3>Share</h3>

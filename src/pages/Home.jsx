@@ -29,7 +29,7 @@ const Home = () => {
         setBannerSection(websitedata.homepage.banner_section);
         setServicesSection(websitedata.homepage.services_section);
         setCompanyStatsSection(websitedata.homepage.Achievements_section);
-        setOurProjects(websitedata.homepage.Projects_section);
+        setOurProjects(websitedata.projects);
         setWhyChooseUsSection(websitedata.homepage.why_choose_us_section);
         setQuoteSection(websitedata.homepage.quote_section);
         setClientSection(websitedata.homepage.client_section);

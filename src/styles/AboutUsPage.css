@@ -6,11 +6,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 60px;
+    padding: 150px 60px 0;
     background-color: #f4f4f9;
     border-radius: 15px;
     /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); */
-    /* margin: 40px 0; */
   }
   
   .about-us-text-container {
