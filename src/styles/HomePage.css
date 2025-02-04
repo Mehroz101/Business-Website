@@ -592,6 +592,36 @@
   .reviews-carousel .p-carousel-items {
     gap: 20px;
   }
+
+/* Container for the entire client section */
+.client_section {
+  padding: 40px;
+  background-color: #fff; /* Change as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for client logos */
+.client_logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;           /* Adjust gap between logos */
+  flex-wrap: wrap;     /* Wrap logos if screen size is small */
+}
+
+/* Client logos styling: grayscale by default, original color on hover */
+.client-logo {
+  max-width: 150px;           /* Adjust as needed */
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.client-logo:hover {
+  filter: grayscale(0%);
+}
+  
   
   /* ===========================
      Consolidated Responsive Media Queries

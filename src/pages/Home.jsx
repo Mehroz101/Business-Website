@@ -5,6 +5,7 @@ import WhyChooseUs_Section from "../components/HomePageComponents/WhyChooseUs_Se
 import Quote_Section from "../components/HomePageComponents/Quote_Section";
 import CompanyStats_Section from "../components/HomePageComponents/CompanyStats_Section";
 import Our_Projects from "../components/HomePageComponents/Our_Projects";
+import Client_Section from "../components/HomePageComponents/Client_Section";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         {/* <div style={{ position: "relative" }}> */}
         <WhyChooseUs_Section />
         <Quote_Section />
+        <Client_Section />
         {/* </div> */}
       </div>
     </>
