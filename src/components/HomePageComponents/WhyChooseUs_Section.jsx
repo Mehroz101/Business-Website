@@ -5,7 +5,7 @@ import customer from "../../assets/customer.png";
 import shield from "../../assets/shield.png";
 import reliability from "../../assets/reliability.png";
 
-const WhyChooseUs_Section = () => {
+const WhyChooseUs_Section = ({ whychoosedata }) => {
   const whyChooseData = [
     {
       title: "Expertise",
@@ -42,7 +42,7 @@ const WhyChooseUs_Section = () => {
       icon: reliability,
     },
   ];
-
+  console.log(whychoosedata);
   return (
     <div className="why-choose-section">
       <div className="why-choose-top">
@@ -59,15 +59,16 @@ const WhyChooseUs_Section = () => {
       </div>
 
       <div className="why-choose-cards">
-        {whyChooseData.map((card, index) => (
-          <div key={index} className="why-choose-card hover_card">
-            <div className="why-choose-icon">
-              <img src={card.icon} alt={card.title} />
+        {whychoosedata &&
+          whychoosedata?.why_choose_us?.map((card, index) => (
+            <div key={index} className="why-choose-card hover_card">
+              <div className="why-choose-icon">
+                <img src={card.icon} alt={card.title} />
+              </div>
+              <h3 className="why-choose-title">{card.title}</h3>
+              <p className="why-choose-description">{card.description}</p>
             </div>
-            <h3 className="why-choose-title">{card.title}</h3>
-            <p className="why-choose-description">{card.description}</p>
-          </div>
-        ))}
+          ))}
       </div>
     </div>
   );

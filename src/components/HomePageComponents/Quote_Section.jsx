@@ -7,14 +7,14 @@ import bgTexture from "../../assets/bgTexture.jpg";
 import { Carousel } from "primereact/carousel";
 import "../../styles/HomePage.css"; // Make sure this file is in your project
 
-const Quote_Section = () => {
+const Quote_Section = ({ quotedata }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
   const method = useForm();
-
+  console.log("quotedata", quotedata);
   // Handle form input change
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -64,11 +64,11 @@ const Quote_Section = () => {
     return (
       <div className="review-box">
         <div className="review-left">
-          <img src={review.img} alt={review.name} className="review-img" />
+          <img src={review.image} alt={review.name} className="review-img" />
           <span className="review-person">{review.name}</span>
         </div>
         <div className="review-right">
-          <p className="review-text">{review.text}</p>
+          <p className="review-text">{review.review}</p>
         </div>
       </div>
     );
@@ -90,36 +90,19 @@ const Quote_Section = () => {
             </p>
           </div>
           <div className="left-bottom">
-            <div className="left-bottom-item">
-              <div className="left-bottom-icon-box">
-                <FontAwesomeIcon icon={faPhone} className="left-bottom-icon" />
-              </div>
-              <p className="left-bottom-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
-                sapiente alias quibusdam asperiores dolor quidem ducimus minima,
-                accusantium numquam inventore.
-              </p>
-            </div>
-            <div className="left-bottom-item">
-              <div className="left-bottom-icon-box">
-                <FontAwesomeIcon icon={faPhone} className="left-bottom-icon" />
-              </div>
-              <p className="left-bottom-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
-                sapiente alias quibusdam asperiores dolor quidem ducimus minima,
-                accusantium numquam inventore.
-              </p>
-            </div>
-            <div className="left-bottom-item">
-              <div className="left-bottom-icon-box">
-                <FontAwesomeIcon icon={faPhone} className="left-bottom-icon" />
-              </div>
-              <p className="left-bottom-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
-                sapiente alias quibusdam asperiores dolor quidem ducimus minima,
-                accusantium numquam inventore.
-              </p>
-            </div>
+            {quotedata &&
+              quotedata?.quote_boxs?.map((box, index) => (
+                <div className="left-bottom-item" key={index}>
+                  <div className="left-bottom-icon-box">
+                    <img
+                      src={box.icon}
+                      alt={box.title}
+                      className="left-bottom-icon"
+                    />
+                  </div>
+                  <p className="left-bottom-text">{box.description}</p>
+                </div>
+              ))}
           </div>
         </div>
 
@@ -157,16 +140,18 @@ const Quote_Section = () => {
 
       {/* Reviews Carousel */}
       <div className="reviews-carousel-wrapper">
-        <Carousel
-          value={reviews}
-          numVisible={2}
-          numScroll={1}
-          responsiveOptions={responsiveOptions}
-          circular
-          autoplayInterval={3000}
-          itemTemplate={reviewTemplate}
-          className="reviews-carousel"
-        />
+        {quotedata?.reviews && (
+          <Carousel
+            value={quotedata?.reviews}
+            numVisible={2}
+            numScroll={1}
+            responsiveOptions={responsiveOptions}
+            circular
+            autoplayInterval={3000}
+            itemTemplate={reviewTemplate}
+            className="reviews-carousel"
+          />
+        )}
       </div>
     </div>
   );

@@ -453,12 +453,15 @@
     align-items: center;
     width: 150px;
     height: 40px;
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
     border-radius: 4px;
   }
   
   .left-bottom-icon {
     color: #fff;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
   
   .left-bottom-text {
@@ -621,7 +624,7 @@
 .client-logo:hover {
   filter: grayscale(0%);
 }
-  
+
   
   /* ===========================
      Consolidated Responsive Media Queries

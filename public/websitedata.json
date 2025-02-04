@@ -1,0 +1,170 @@
+{
+  "homepage": {
+    "banner_section": {
+      "small_text": "Welcome to Our Consulting Firm",
+      "tagline": " Empower Your Business with Expert Consulting",
+      "description": "Unlock new opportunities and scale your business with our professional guidance.",
+      "facebook_link": "https://www.facebook.com/yourpage",
+      "background_image":"../src/assets/bannerImg.jpg",
+      "twitter_link": "https://www.twitter.com/yourpage",
+      "linkdin_link": "https://www.linkedin.com/yourpage",
+      "instagram_link": "https://www.instagram.com/yourpage"
+    },
+    "services_section": {
+      "title": "Our Services",
+      "description": "We offer a wide range of consulting services to help you achieve your business goals.",
+      "services": [
+        {
+          "title": "Consulting",
+          "description": "Expert business consulting to take your company to the next level.",
+          "image": "../src/assets/consultation.png"
+        },
+        {
+          "title": "Web Development",
+          "description": "Cutting-edge web development solutions for a seamless online experience.",
+          "image": "../src/assets/computer.png"
+        },
+        {
+          "title": "Digital Marketing",
+          "description": "Comprehensive digital marketing strategies to grow your brand.",
+          "image": "../src/assets/socialmedia.png"
+        },
+        {
+          "title": "SEO Optimization",
+          "description": "Advanced SEO techniques to boost your website's ranking.",
+          "image": "../src/assets/seo.png"
+        }
+      ]
+    },
+    "Achievements_section":{
+      "title":"Our Achievements",
+      "description":"We pride ourselves on delivering exceptional results and exceeding expectations for our clients.",
+      "achievements":[
+        {
+          "title":"100+",
+          "description":"Projects Completed"
+        },
+        {
+          "title":"5+",
+          "description":"Years of Experience"
+        },
+        {
+          "title":"100%",
+          "description":"Client Satisfaction"
+        },
+        {
+          "title":"50+",
+          "description":"Team Members"
+        }
+      ]
+    },
+    "Projects_section":{
+      "title":"Our Work",
+      "description":"We have successfully delivered a wide range of projects that have made a difference in the lives of our clients.",
+      "projects":[
+        {
+          "name":"Hospital Management System",
+          "image":"../src/assets/project1.jpg"
+        }  ,
+        {
+          "name":"Liabrary Management System",
+          "image":"../src/assets/project2.jpg"
+        },
+        {
+          "name":"Student Management System",
+          "image":"../src/assets/project3.jpg"
+        }
+      ]
+    },
+    "why_choose_us_section": {
+      "title": "Why Choose Us",
+      "description": "Why choose us for your business needs?",
+      "why_choose_us": [
+       {
+        "icon":"../src/assets/experience.png",
+         "title": "Expertise",
+         "description": "We have a team of experienced professionals who are passionate about what they do."
+       },
+       {
+        "icon":"../src/assets/customize.png",
+         "title": "Customization",
+         "description": "We tailor our services to meet the unique needs of our clients."
+       },
+       {
+         "icon": "../src/assets/badge.png",
+         "title": "Quality",
+         "description": "We prioritize quality in all of our services and products."
+       },
+       {
+        "icon":"../src/assets/help-desk.png",
+         "title": "Customer Support",
+         "description": "We provide 24/7 customer support to help with all your needs."
+       },
+       {
+        "icon":"../src/assets/shield.png",
+         "title": "Security",
+         "description": "We ensure the highest level of security in all our services."
+       },
+       {
+        "icon":"../src/assets/partners.png",
+         "title": "Collaboration",
+         "description": "We believe in the power of teamwork and collective success."
+       }
+      ]
+    },
+    "quote_section": {
+      "small_text": "How it works",
+      "title": "Get a Custom Quote",
+      "description":" Fill out the form below and we'll get back to you within 24 hours. We value your time and will respond as soon as possible.",
+      "quote_boxs":[
+        {
+          "icon":"../src/assets/shuttle.png",
+          "title":"Boost Your Business",
+          "description":"Efficient, scalable, and custom management software tailored to your needs. Let's build something great!"
+        },
+        {
+          "icon":"../src/assets/robotic-process.png",
+          "title":"Automate & Grow",
+          "description":"Fill out the form below and we'll get back to you within 24 hours. We value your time and will respond as soon as possible."
+        },
+        {
+          "icon":"../src/assets/optimize.png",
+          "title":"Custom Solutions for Your Needs", 
+          "description":"Efficient, scalable, and custom management software tailored to your needs. Let's build something great!"
+        }
+      ],
+      "reviews" :[
+        {
+          "image":"../src/assets/client1.png",
+          "name":"John Doe",
+          "review":"This company has completely transformed our business operations. Highly recommend their services!"
+        },
+        {
+          "image":"../src/assets/client2.png",
+          "name":"Jane Smith",
+          "review":" I am extremely impressed with the level of service provided by this company. They have exceeded my expectations. I highly recommend them!"
+        },
+        {
+          "image":"../src/assets/client3.png",
+          "name":"Bob Johnson",
+          "review":" I had a great experience with this company. They provided excellent customer support and helped me solve my issues quickly. I would definitely use them again!"
+        }
+      ]
+    },
+    "client_section":{
+      "clients":[
+        {
+          "image":"../src/assets/client1.png"
+        },
+        {
+          "image":"../src/assets/client2.png"
+        },
+        {
+          "image":"../src/assets/client3.png"
+        }
+
+      ]
+    }
+
+  }
+}
