@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
   AboutUs,
+  Contact,
   Home,
   Layout,
   Login,
@@ -68,7 +69,7 @@ function AppRoutes() {
         <Route index element={<Home />} />
         <Route path={ROUTES.ABOUTUS} element={<AboutUs />} />
         <Route path={ROUTES.PROJECTVIEW} element={<ProjectView />} />
-        <Route path={ROUTES.SETTING} element={<Setting />} />
+        <Route path={ROUTES.CONTACT} element={<Contact />} />
       </Route>
     </Routes>
   );

@@ -33,6 +33,7 @@
 }
 .logo img {
   max-width: 250px;
+  cursor: pointer;
 }
 
 /* Navigation Links */
@@ -50,7 +51,7 @@
 }
 
 .nav-links li a:hover {
-  color: #02943F;
+  color: var(--secondary-color);
 }
 
 /* CTA Button (Desktop & Mobile) */
@@ -69,7 +70,7 @@
 }
 
 .cta-btn .icon {
-  color: #02943F;
+  color: var(--secondary-color);
   font-size: 25px;
 }
 
@@ -80,8 +81,8 @@
 
 .cta-btn p .number {
   font-weight: 600;
-  color: #02943F;
-  border-bottom: 1px dotted #02943F;
+  color: var(--secondary-color);
+  border-bottom: 1px dotted var(--secondary-color);
 }
 
 /* Desktop Call Button */

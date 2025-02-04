@@ -7,5 +7,6 @@ export const Setting = lazy(() => import("../pages/Setting"));
 export const Home = lazy(() => import("../pages/Home"));
 export const AboutUs = lazy(() => import("../pages/AboutUs"));
 export const ProjectView = lazy(() => import("../pages/ProjectView"));
+export const Contact = lazy(() => import("../pages/Contact"));
 export const ProtectedRoute = lazy(() => import("../context/ProtectedRoutes"));
 export const Layout = lazy(() => import("../layout/Layout"));

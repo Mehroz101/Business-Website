@@ -1,0 +1,111 @@
+.contactus_page {
+  margin: 100px auto;
+  max-width: 1200px;
+}
+.contactus_container {
+  /* border: 1px solid #333; */
+  margin-top: 200px;
+  padding: 30px;
+  display: flex;
+  gap: 40px;
+}
+.contactus_container .contactus_left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contactus_container .contactus_span {
+  font-size: 20px;
+  color: var(--secondary-color);
+  margin-bottom: 5px;
+}
+.contactus_container h2.contactus_h2 {
+  margin: 10px 0 0;
+  font-size: 48px;
+  color: #333;
+}
+.contactus_container .contactus_left .input_box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.contactus_container .contactus_left .input_box > div {
+  width: 100%;
+}
+.contactus_container .contactus_left .input_box .custom-input {
+  font-size: 14px !important;
+}
+.contactus_container .contactus_left .contactus_textarea {
+  width: 100%;
+  border: 1px solid #c9c9c9;
+  border-radius: 4px;
+}
+.contactus_container .contactus_left .contactus_btn {
+  background-color: var(--secondary-color);
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  margin-top: 10px;
+}
+.contactus_container .contactus_right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contactus_container .contactus_right .contactus_p {
+  font-size: 0.9rem;
+  color: #333;
+}
+.contactus_container .contactus_right .right_bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.right_bottom .right_bottom_box {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+.right_bottom .right_bottom_box .right_bottom_box_left {
+  font-size: 20px;
+  background-color: var(--secondary-color);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.right_bottom .right_bottom_box .right_bottom_box_right span {
+  color: var(--secondary-color);
+}
+.right_bottom .right_bottom_box .right_bottom_box_right p {
+  margin: 10px 0;
+  text-align: left;
+  color: #333;
+}
+.contactus_location{
+    width: 100%;
+    margin-top: 30px;
+}
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 654px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 654px;
+}
+.gmap_iframe {
+  height: 654px !important;
+}
