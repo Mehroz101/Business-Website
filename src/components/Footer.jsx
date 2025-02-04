@@ -15,7 +15,6 @@ const Footer = () => {
         </p>
         <button className="button">Get Started</button>
       </div>
-
       {/* Middle Section */}
       <div className="middleSection">
         {/* Menu Sections */}
