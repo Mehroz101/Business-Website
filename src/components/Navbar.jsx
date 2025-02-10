@@ -4,13 +4,15 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link, useNavigate } from "react-router-dom";
 import logoImg from "../assets/logo.png";
+import { ROUTES } from "../utils/routes";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [dropdown, setDropdown] = useState(null);
   const navigate = useNavigate();
+
   return (
     <nav className="navbar">
-      {/* Logo Section */}
       <div className="logo">
         <img
           src={logoImg}
@@ -22,67 +24,40 @@ const Navbar = () => {
         />
       </div>
 
-      {/* Mobile Menu Toggle Button */}
       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
         ☰
       </div>
 
-      {/* Navigation Links */}
       <div className={`nav-right ${menuOpen ? "open" : ""}`}>
         <ul className="nav-links">
-          <li>
-            <Link to={"/"} onClick={() => setMenuOpen(false)}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to={"/aboutus"} onClick={() => setMenuOpen(false)}>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to={"/projectview"} onClick={() => setMenuOpen(false)}>
-              Project
-            </Link>
-          </li>
-          <li>
-            <Link to={"/contactus"} onClick={() => setMenuOpen(false)}>
-              Contact
-            </Link>
-          </li>
+          {[
+            { label: "Home", route: "/" },
+            { label: "About", route: ROUTES.ABOUTUS },
+            { label: "All Projects", route: ROUTES.ALLPROJECTS },
+            { label: "Industries", route: ROUTES.INDUSTRIES },
+            { label: "Contact", route: ROUTES.CONTACT },
+          ].map((item, index) => (
+            <li
+              key={index}
+              className="nav-item"
+              onMouseEnter={() => setDropdown(index)}
+              onMouseLeave={() => setDropdown(null)}
+            >
+              <Link to={item.route} onClick={() => setMenuOpen(false)}>
+                {item.label}
+              </Link>
+              {dropdown === index && item.label === "Industries" && (
+                <div className="dropdown-menu">
+                  <Link to={item.route + "#Ecom"}> E-Commerce</Link>
+                  <Link to={item.route + "#RealEstate"}> Real Estate</Link>
+                  <Link to={item.route + "#Healthcare"}> Healthcare</Link>
+                  <Link to={item.route + "#Banking"}> Banking</Link>
+                  <Link to={item.route + "#Insurance"}> Insurance</Link>
+                </div>
+              )}
+            </li>
+          ))}
         </ul>
-
-        {/* Call Button (Desktop) */}
-        {!menuOpen && (
-          <div
-            className="cta-btn desktop-only"
-            onClick={() => setMenuOpen(menuOpen)}
-          >
-            <FontAwesomeIcon icon={faPhone} className="icon" />
-            <p>
-              Have any questions?
-              <span>
-                Free: <span className="number">0712 819 79 555</span>
-              </span>
-            </p>
-          </div>
-        )}
-
-        {/* Call Button in Mobile Menu */}
-        {menuOpen && (
-          <div
-            className="cta-btn mobile-only"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            <FontAwesomeIcon icon={faPhone} className="icon" />
-            <p>
-              Have any questions?
-              <span>
-                Free: <span className="number">0712 819 79 555</span>
-              </span>
-            </p>
-          </div>
-        )}
       </div>
     </nav>
   );

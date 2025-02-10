@@ -2,8 +2,10 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
   AboutUs,
+  AllProjects,
   Contact,
   Home,
+  Industries,
   Layout,
   Login,
   ProjectView,
@@ -15,6 +17,8 @@ import {
 import { Suspense } from "react";
 import { ROUTES } from "./utils/routes";
 import { ErrorBoundary } from "react-error-boundary";
+import RingLoader from "react-spinners/RingLoader";
+
 function Fallback({ error }) {
   const regex = /\((.*?):\d+:\d+\)/;
   const match = error.stack.match(regex);
@@ -52,7 +56,13 @@ function Fallback({ error }) {
 function App() {
   return (
     <Router>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense
+        fallback={
+          <div className="flex justify-content-center align-items-center h-screen">
+            <RingLoader />
+          </div>
+        }
+      >
         <ErrorBoundary FallbackComponent={Fallback}>
           <AppRoutes />
         </ErrorBoundary>
@@ -69,7 +79,9 @@ function AppRoutes() {
         <Route index element={<Home />} />
         <Route path={ROUTES.ABOUTUS} element={<AboutUs />} />
         <Route path={`${ROUTES.PROJECTVIEW}/:id`} element={<ProjectView />} />
+        <Route path={ROUTES.INDUSTRIES} element={<Industries />} />
         <Route path={ROUTES.CONTACT} element={<Contact />} />
+        <Route path={ROUTES.ALLPROJECTS} element={<AllProjects />} />
       </Route>
     </Routes>
   );

@@ -13,7 +13,6 @@
   z-index: 1000;
 }
 
-/* Right-side menu */
 .nav-right {
   display: flex;
   align-items: center;
@@ -23,7 +22,6 @@
   margin: 0;
 }
 
-/* Logo */
 .logo {
   font-size: 24px;
   font-weight: bold;
@@ -31,16 +29,21 @@
   display: flex;
   align-items: flex-end;
 }
+
 .logo img {
   max-width: 250px;
   cursor: pointer;
 }
 
-/* Navigation Links */
 .nav-links {
   display: flex;
   gap: 25px;
   list-style: none;
+  position: relative;
+}
+
+.nav-links li {
+  position: relative;
 }
 
 .nav-links li a {
@@ -48,111 +51,82 @@
   color: #333;
   font-size: 16px;
   transition: color 0.3s ease;
+  padding: 10px;
 }
 
 .nav-links li a:hover {
   color: var(--secondary-color);
 }
 
-/* CTA Button (Desktop & Mobile) */
-.cta-btn {
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 0;
-  padding: 10px;
-  background: none;
-}
-
-.cta-btn .icon {
-  color: var(--secondary-color);
-  font-size: 25px;
-}
-
-.cta-btn p {
-  display: flex;
+  display: none;
   flex-direction: column;
+  min-width: 150px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
 }
 
-.cta-btn p .number {
-  font-weight: 600;
-  color: var(--secondary-color);
-  border-bottom: 1px dotted var(--secondary-color);
-}
-
-/* Desktop Call Button */
-.desktop-only {
+.nav-item:hover .dropdown-menu {
   display: flex;
-  padding: 0;
+  opacity: 1;
+  transform: translateY(0);
 }
 
-/* Mobile Menu Icon */
+.dropdown-menu a {
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
 .menu-icon {
   font-size: 26px;
   cursor: pointer;
   display: none;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-  /* Hide nav links initially */
   .nav-right {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      background: #fff;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-      padding: 20px 0;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
   }
 
   .nav-right.open {
-      display: flex;
+    display: flex;
   }
 
   .nav-links {
-      flex-direction: column;
-      text-align: center;
-      gap: 15px;
-      padding: 0;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding: 0;
   }
 
   .nav-links li {
-      padding: 10px 0;
+    padding: 10px 0;
   }
 
-  .mobile-only {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 5px;
-      padding: 0;
-      text-align: center;
-  }
-
-  .mobile-only .icon {
-      margin-right: 10px;
-  }
-
-  .mobile-only .number {
-      font-weight: bold;
-      border-bottom: 1px dotted #fff;
-  }
-
-  /* Hide desktop call button */
-  .desktop-only {
-      display: none;
-  }
-
-  /* Show menu icon */
   .menu-icon {
-      display: block;
+    display: block;
   }
 }

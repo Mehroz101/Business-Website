@@ -1,0 +1,670 @@
+.industries_view .industries_banner{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.industries_view .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+  }
+  .industries_view .banner-overlay h1{
+    font-size: 3rem;
+    font-weight: 700;
+    width: 80%;
+    margin: 0 auto;
+    color: var(--secondary-color);
+
+  }
+  .about_industry{
+    padding-top: 50px;
+    text-align: center;
+    background-color: #F6F7F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about_industry .about_industry_span{
+    color: var(--secondary-color);
+    font-size: 16px;
+  }
+  .about_industry .about_industry_h1{
+    font-size: 35px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    max-width: 800px;
+  }
+  .about_industry .about_industry_p{
+    font-size: 20px;
+    color: #627792;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    max-width: 800px;
+  }
+  .sector_industry{
+    padding-top: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fdfdfd;
+    margin: 0 auto;
+  }
+  .sector_industry .sector_industry_span{
+    color: var(--secondary-color);
+    font-size: 16px;
+  }
+  .sector_industry .sector_industry_h1{
+    font-size: 35px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    max-width: 800px;
+  }
+  .sector_industry .sector_industry_p{
+    font-size: 20px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 800px;
+  }
+  .sectors_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    max-width: 1400px;
+  }
+  .sectors_section .sector_box{
+    display: flex;
+    justify-content: center;
+    /* padding: 20px; */
+    /* background-color: #f7f7f7; */
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 10px;
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+  }
+  .sectors_section .sector_box img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  .sectors_section .sector_box .sector_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+  }
+  .sectors_section .sector_box .sector_text h2{
+    text-align: left;
+    margin: 0 0 5px 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+  }
+  .sectors_section .sector_box .sector_text p{
+    margin: 0;
+    text-align: left;
+    font-size: 16px;
+    color: #666;
+  }
+  .benefits_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #231834;
+    padding: 50px;
+    color: #FAFAFA;
+    width: 100vw;
+  }
+  .benefits_section .benefits_section_span{
+    color: var(--secondary-color);
+    font-size: 16px;
+  
+  }
+ 
+  .benefits_section .benefits_section_h1{
+    font-size: 35px;
+    font-weight: 700;
+    color: #FAFAFA;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    max-width: 800px;
+  }
+  .benefits_section .benefits_boxs{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin: 0 auto;
+
+  }
+  .benefits_section .benefits_boxs .benefit_box{
+    max-width: 270px;
+    border-radius: 10px;
+    margin: 10px;
+   background-color: #2E243E;
+   padding: 5px 10px 20px;
+  }
+  .benefits_section .benefits_boxs .benefit_box h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #FAFAFA;
+    margin-bottom: 10px;
+  }
+  .benefits_section .benefits_boxs .benefit_box p{
+    font-size: 16px;
+    color: #9b9aad;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    max-width: 300px;
+  }
+  .benefits_section .lastline{
+    font-size: 20px;
+    color: #9b9aad;
+    margin-top: 35px;
+  }
+
+  .expertise_section{
+    background-color: #F3F6F9;
+  }
+  .expertise_section .expertise_container{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 50px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+.expertise_section .expertise_container .expertise_left_span{
+    color: var(--secondary-color);
+    font-size: 16px;
+}
+.expertise_section .expertise_container .expertise_left_h2{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    color: #231834;
+    text-transform: capitalize;
+    max-width: 800px;
+}
+.expertise_section .expertise_container .expertise_left_p{
+    font-size: 18px;
+    color: #2E243E;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+.expertise_left_numbers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.expertise_left_numbers_box{
+    display: flex;
+    flex-direction: column;
+}
+.expertise_left_numbers_box .number{
+    font-size: 45px;
+    font-weight: 700;
+}
+.expertise_left_numbers_box .number .number_right{
+    font-size: 30px;
+    color: #627792;
+}
+.expertise_left_numbers_box .number_text{
+    font-size: 18px;
+    color: #627792;
+    margin-bottom: 10px;
+}
+.expertise_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.right_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+  .right_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  /* product section */
+
+  .industry_product_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    background-color: #F6F7F9;
+  }
+  .industry_product_section .industry_product_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0 0 50px 0;
+  }
+  .industry_product_section .industry_product_top h3{
+    font-size: 30px;
+  }
+  .industry_product_section .industry_product_top button{
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    background-color: var(--primary-color);
+  }
+
+  .industry_product_section .industry_product_bottom .industry_products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .industry_product_section .industry_product_bottom .industry_products .industry_product {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    box-shadow: 0 10px 60px rgba(0, 0, 0, .12);
+  }
+  
+  .industry_product_section .industry_product_bottom .industry_products img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .industry_product_section .industry_product_bottom .industry_products .industry_product .img {
+    max-width: 400px;
+    max-height: 200px;
+    overflow: hidden;
+    position: relative; /* Added for overlay positioning */
+  }
+  
+  .industry_product_section .industry_product_bottom .industry_products .industry_product .img .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .industry_product_section .industry_product_bottom .industry_products .industry_product:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  .industry_product_section .industry_product_bottom .industry_products .industry_product:hover img {
+    transform: scale(1.1);
+  }
+  
+  .industry_product_section .industry_product_bottom .industry_products .industry_product_text span {
+    font-size: 14px;
+    color: var(--secondary-color);
+  }
+  
+  .industry_product_section .industry_product_bottom .industry_products .industry_product_text h4 {
+    font-size: 18px;
+    margin: 5px 0 20px;
+  }
+  
+  .industry_product_section .industry_product_bottom .industry_products .industry_product_text p {
+    font-size: 14px;
+  }
+  
+  .industry_product_section .industry_product_bottom .industry_products .industry_product_text button {
+    font-size: 16px;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .industry_product_section .industry_product_bottom .industry_products .industry_product_text button:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+  }
+    /* ===========================
+     Consolidated Responsive Media Queries
+     =========================== */
+     @media (max-width: 1024px) {
+      .industries_view .banner-overlay h1{
+        font-size: 2.5rem;
+      }
+      .about_industry_h1{
+        font-size: 2rem !important;
+      }
+      .about_industry_p{
+        font-size: 18px !important;
+      }
+      .sector_industry_h1{
+        font-size: 2rem !important;
+      }
+      .sector_industry_p{
+        font-size: 18px !important;
+      }
+      .sectors_section .sector_box .sector_text h2{
+        font-size: 20px;
+      }
+      .sectors_section .sector_box .sector_text p{
+        font-size: 14px;
+      }
+      .benefits_section .benefits_section_h1{
+        font-size: 30px !important;
+      }
+      .benefits_section .benefits_boxs .benefit_box h3{
+        font-size: 18px;
+      }
+      .benefits_section .benefits_boxs .benefit_box p{
+        font-size: 14px;
+      }
+      .expertise_container .expertise_left_h2{
+        font-size: 30px !important;
+      }
+      .expertise_container .expertise_left_p{
+        font-size: 16px !important;
+      }
+      .expertise_section .expertise_container .expertise_left_span{
+        font-size: 14px;
+      }
+      .benefits_section .lastline{
+        font-size: 16px;
+      }
+      .expertise_container{
+        flex-wrap: wrap;
+        padding: 0 20px;
+
+      }
+      .expertise_left_numbers{
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .expertise_left_numbers_box .number{
+        font-size: 35px;
+    }
+    .expertise_left_numbers_box .number .number_right{
+        font-size: 30px;
+    }
+    .expertise_left_numbers_box .number_text{
+        font-size: 16px;
+        color: #627792;
+        margin-bottom: 10px;
+    }
+     }
+     @media (max-width: 768px) {
+      .industries_view .banner-overlay h1{
+        font-size: 2rem;
+      }
+      .about_industry_h1{
+        font-size: 1.5rem !important;
+      }
+      .about_industry_p{
+        font-size: 16px !important;
+      }
+      .sector_industry_h1{
+        font-size: 1.5rem !important;
+      }
+      .sector_industry_p{
+        font-size: 16px !important;
+      }
+      .sectors_section .sector_box .sector_text h2{
+        font-size: 20px;
+      }
+      .sectors_section .sector_box .sector_text p{
+        font-size: 14px;
+      }
+      .benefits_section .benefits_section_h1{
+        font-size: 1.5rem !important;
+      }
+      .benefits_section .benefits_boxs .benefit_box h3{
+        font-size: 16px;
+      }
+      .benefits_section .benefits_boxs .benefit_box p{
+        font-size: 14px;
+      }
+      .expertise_container .expertise_left_h2{
+        font-size: 1.5rem !important;
+      }
+      .expertise_container .expertise_left_p{
+        font-size: 16px !important;
+      }
+      .expertise_section .expertise_container .expertise_left_span{
+        font-size: 14px;
+      }
+      .benefits_section .lastline{
+        font-size: 16px;
+      }
+      .expertise_container{
+        flex-wrap: wrap;
+        padding: 0 20px;
+
+      }
+      .expertise_left_numbers{
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .expertise_left_numbers_box .number{
+        font-size: 35px;
+    }
+    .expertise_left_numbers_box .number .number_right{
+        font-size: 30px;
+    }
+    .expertise_left_numbers_box .number_text{
+        font-size: 16px;
+        color: #627792;
+        margin-bottom: 10px;
+    }
+    .expertise_right{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  .right_image{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 500px;
+      border-radius: 4px;
+      overflow: hidden;
+  }
+  
+    .right_image img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .industry_product_section .industry_product_top h3{
+      font-size: 1.5rem;
+    }
+     }
+     @media (max-width: 480px) {
+      .industries_view .banner-overlay h1{
+        font-size: 1.5rem;
+      }
+      .about_industry{
+        text-align: left;
+        padding: 30px 10px;
+      }
+      .about_industry_h1{
+        font-size: 1.2rem !important;
+      }
+      .about_industry .about_industry_span{
+        text-align: left !important;
+        width: 100%;
+      }
+      .about_industry_p{
+        font-size: 14px !important;
+      }
+      .sector_industry{
+        text-align: left;
+        padding: 20px 10px 0px 10px;
+
+      }
+      .sector_industry .sectors_section{
+        padding: 10px;
+      }
+      .sector_industry_span{
+        width: 100%;
+      }
+      .sector_industry_h1{
+        font-size: 1.2rem !important;
+      }
+      .sector_industry_p{ 
+        font-size: 14px !important;
+      }
+      .sectors_section .sector_boxs{
+        flex-direction: column;
+        gap: 20px;
+      }
+      .sectors_section .sector_box{
+        width: 100% !important;
+      }
+      .sectors_section .sector_box .sector_text h2{
+        font-size: 16px;
+      }
+      .sectors_section .sector_box .sector_text p{
+        font-size: 12px;
+      }
+      .benefits_section{
+        padding: 30px 10px;
+      }
+      .benefits_section  .benefits_section_span{
+        width: 100%;
+        text-align: left  ;
+      }
+      .benefits_section .benefits_section_h1{
+        font-size: 1.2rem !important;
+      }
+      .benefits_section .benefits_boxs .benefit_box h3{
+        font-size: 14px;
+      }
+      .benefits_section .benefits_boxs .benefit_box p{
+        font-size: 12px;
+      }
+      .expertise_container .expertise_left_h2{
+        font-size: 1.2rem !important;
+      }
+      .expertise_container .expertise_left_p{
+        font-size: 14px !important;
+      }
+    
+      .benefits_section .lastline{
+        font-size: 14px;
+      }
+      .expertise_container{
+        flex-wrap: wrap;
+        padding: 0 20px;
+
+      }
+      .expertise_left_numbers{
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .expertise_left_numbers_box .number{
+        font-size: 35px;
+    }
+
+    .expertise_left_numbers_box .number .number_right{
+        font-size: 30px;
+    }
+    .expertise_left_numbers_box .number_text{
+        font-size: 16px;
+        color: #627792; 
+        margin-bottom: 10px;
+    }
+    .expertise_right{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  .right_image{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 500px;
+      border-radius: 4px;
+      overflow: hidden;
+  }
+  
+    .right_image img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .industry_product_section{
+      padding: 10px;
+    }
+    .industry_product_section .industry_product_top h3{
+      font-size: 1.2rem;
+    }
+     }

@@ -1,0 +1,175 @@
+.allproject_view .project_banner{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.allproject_view .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+  }
+  .allproject_view .banner-overlay h1{
+    font-size: 3rem;
+    font-weight: 700;
+    width: 80%;
+    margin: 0 auto;
+    color: var(--secondary-color);
+
+  }
+/* 
+  .allproject_view {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .project_banner {
+    position: relative;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner-overlay h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+  } */
+  
+  /* Search Bar */
+  .search-container {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  .search-container input {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  /* Projects Grid */
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+    .projects-grid .industry_product {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    box-shadow: 0 10px 60px rgba(0, 0, 0, .12);
+  }
+  
+    .projects-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+  }
+  
+    .projects-grid .industry_product .img {
+    max-width: 400px;
+    max-height: 200px;
+    overflow: hidden;
+    position: relative; /* Added for overlay positioning */
+  }
+  
+    .projects-grid .industry_product .img .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+    .projects-grid .industry_product:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+    .projects-grid .industry_product:hover img {
+    transform: scale(1.1);
+  }
+  
+    .projects-grid .industry_product_text span {
+    font-size: 14px;
+    color: var(--secondary-color);
+  }
+  
+    .projects-grid .industry_product_text h4 {
+    font-size: 18px;
+    margin: 5px 0 20px;
+  }
+  
+    .projects-grid .industry_product_text p {
+    font-size: 14px;
+  }
+  
+    .projects-grid .industry_product_text button {
+    font-size: 16px;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+  
+    .projects-grid .industry_product_text button:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .projects-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

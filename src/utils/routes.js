@@ -6,4 +6,6 @@ export const ROUTES = {
   PROJECTVIEW: "/projectview",
   USERS: "/users",
   CONTACT: "/contactus",
+  ALLPROJECTS: "/allprojects",
+  INDUSTRIES: "/industries",
 };
