@@ -1,7 +1,6 @@
 import React from "react";
 import { Carousel } from "primereact/carousel"; // Make sure PrimeReact is installed
 import companyImg from "../../assets/bannerImg.jpg"; // Replace with a default image if needed
-import "../../styles/AboutUsPage.css"; // Import the external CSS
 
 const AboutUsTestimonials = () => {
   const testimonials = [

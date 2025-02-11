@@ -246,5 +246,139 @@
       }
     ]
     
+  },
+ "industries_section": {
+    "industries": [
+      {
+        "name": "Banking",
+        "overview": {
+          "title": "Secure and Scalable Financial Technology Solutions",
+          "description": "We deliver secure and scalable financial technology solutions, ensuring seamless transactions, digital banking, and fraud prevention.We deliver secure and scalable financial technology solutions, ensuring seamless transactions, digital banking, and fraud prevention"
+        },
+        "sectors": [
+          {
+            "title": "Online Banking",
+            "img": "../src/assets/project3.jpg",
+            "description": "Enhancing digital banking experiences with AI-powered security and fraud prevention."
+          },
+          {
+            "title": "Investment Platforms",
+            "img": "../src/assets/project3.jpg",
+            "description": "Automated trading, risk management, and AI-driven portfolio analysis."
+          },
+          {
+            "title": "Online Banking",
+            "img": "../src/assets/project3.jpg",
+            "description": "Enhancing digital banking experiences with AI-powered security and fraud prevention."
+          },
+          {
+            "title": "Investment Platforms",
+            "img": "../src/assets/project3.jpg",
+            "description": "Automated trading, risk management, and AI-driven portfolio analysis."
+          },
+          {
+            "title": "Online Banking",
+            "img": "../src/assets/project3.jpg",
+            "description": "Enhancing digital banking experiences with AI-powered security and fraud prevention."
+          },
+          {
+            "title": "Investment Platforms",
+            "img": "../src/assets/project3.jpg",
+            "description": "Automated trading, risk management, and AI-driven portfolio analysis."
+          }
+        ],
+        "benefits": [
+          {
+            "title": "Cost Savings",
+            "description": "Reduce transaction costs and enhance operational efficiency."
+          },
+          {
+            "title": "Cost Savings",
+            "description": "Reduce transaction costs and enhance operational efficiency."
+          },
+          {
+            "title": "Security & Compliance",
+            "description": "Ensure data protection and regulatory compliance with cutting-edge encryption."
+          }
+        ],
+        "expertise": {
+          "title": "Our Banking Expertise",
+          "description": "Our experts have deep knowledge about the banking industry and how to deploy digital technology for transformation.",
+          "img": "../src/assets/bannerImg.jpg",
+          "numbers": [
+            {
+              "value": "500+",
+              "text": "Financial services firms worldwide"
+            },
+            {
+              "value": "1M+",
+              "text": "Transactions secured every day"
+            }
+          ]
+        },
+        "industryProducts": [
+          {
+            "category": "Banking Solutions",
+            "title": "AI-Powered Fraud Detection",
+            "description": "A revolutionary system detecting fraud patterns in real-time.",
+            "img": "../src/assets/project2.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Healthcare",
+        "overview": {
+          "title": "Revolutionizing Healthcare with Technology",
+          "description": "We provide AI-driven diagnostics, telemedicine, and electronic medical records to improve patient outcomes."
+        },
+        "sectors": [
+          {
+            "title": "Telemedicine",
+            "img": "../src/assets/project3.jpg",
+            "description": "Enabling remote healthcare services and virtual consultations."
+          },
+          {
+            "title": "AI Diagnostics",
+            "img": "../src/assets/project3.jpg",
+            "description": "Using machine learning to detect diseases at an early stage."
+          }
+        ],
+        "benefits": [
+          {
+            "title": "Improved Patient Care",
+            "description": "Enhanced healthcare services through AI-driven analysis."
+          },
+          {
+            "title": "Operational Efficiency",
+            "description": "Automating processes to reduce administrative workload."
+          }
+        ],
+        "expertise": {
+          "title": "Our Healthcare Expertise",
+          "description": "We specialize in healthcare IT, telemedicine, and medical data analytics.",
+          "img": "../src/assets/bannerImg.jpg",
+
+          "numbers": [
+            {
+              "value": "200+",
+              "text": "Hospitals using our solutions"
+            },
+            {
+              "value": "5M+",
+              "text": "Patients benefitting from our tech"
+            }
+          ]
+        },
+        "industryProducts": [
+          {
+            "category": "Healthcare Solutions",
+            "title": "Cloud Migration for Health Data",
+            "description": "A secure cloud-based system for patient data storage.",
+            "img": "../src/assets/project3.jpg"
+          }
+        ]
+      }
+    ]
   }
+  
 }

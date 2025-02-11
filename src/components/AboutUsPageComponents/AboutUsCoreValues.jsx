@@ -6,9 +6,7 @@ import {
   faUsers,
   faLeaf,
   faAward,
-  faCheckCircle,
 } from "@fortawesome/free-solid-svg-icons"; // Importing relevant icons
-import "../../styles/AboutUsPage.css"; // Importing the CSS file
 
 const AboutUsCoreValues = () => {
   const values = [

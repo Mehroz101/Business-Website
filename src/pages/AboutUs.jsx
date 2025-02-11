@@ -5,14 +5,16 @@ import AboutUsCoreValues from "../components/AboutUsPageComponents/AboutUsCoreVa
 import AboutUsTeam from "../components/AboutUsPageComponents/AboutUsTeam";
 import AboutUsServices from "../components/AboutUsPageComponents/AboutUsServices";
 import AboutUsTestimonials from "../components/AboutUsPageComponents/AboutUsTestimonials";
-
+import AboutUsBanner from "../components/AboutUsPageComponents/AboutUsBanner";
+import "../styles/AboutUsPage.css";
+import AboutUsGallery from "../components/AboutUsPageComponents/AboutUsGallery";
+import AboutUsBrochure from "../components/AboutUsPageComponents/AboutUsBrochure";
+import WhatWeDo from "../components/AboutUsPageComponents/WhatWeDo";
+import OurHistory from "../components/AboutUsPageComponents/OurHistory";
 const AboutUs = () => {
   const [Aboutusintro, setAboutusintro] = useState({});
   const [Aboutusmission, setAboutusmission] = useState({});
-  const [Aboutuscorevalues, setAboutuscorevalues] = useState({});
-  const [Aboutusteam, setAboutusteam] = useState({});
-  const [Aboutusservices, setAboutusservices] = useState({});
-  const [Aboutusyestimonials, setAboutustestimonials] = useState({});
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -37,11 +39,16 @@ const AboutUs = () => {
   }, []);
   return (
     <>
-      <AboutUsIntro aboutusintrodata={Aboutusintro} />
+      <AboutUsBanner />
+      <AboutUsGallery />
+      <AboutUsBrochure />
+      <WhatWeDo />
+      <OurHistory />
+      {/* <AboutUsIntro aboutusintrodata={Aboutusintro} />
       <AboutUsMission Aaoutusmissiondata={Aboutusmission} />
       <AboutUsCoreValues />
       <AboutUsTeam />
-      <AboutUsServices />
+      <AboutUsServices /> */}
       <AboutUsTestimonials />
     </>
   );

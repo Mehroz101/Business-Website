@@ -132,6 +132,11 @@
     .projects-grid .industry_product:hover img {
     transform: scale(1.1);
   }
+  .projects-grid .industry_product .industry_product_text{
+    display: flex;
+    flex-direction: column;
+    
+  }
   
     .projects-grid .industry_product_text span {
     font-size: 14px;

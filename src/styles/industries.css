@@ -134,7 +134,7 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: #231834;
+    background-color: #4caf50;
     padding: 50px;
     color: #FAFAFA;
     width: 100vw;
@@ -164,7 +164,7 @@
     max-width: 270px;
     border-radius: 10px;
     margin: 10px;
-   background-color: #2E243E;
+   background-color: #4ca84f;
    padding: 5px 10px 20px;
   }
   .benefits_section .benefits_boxs .benefit_box h3{
@@ -175,7 +175,7 @@
   }
   .benefits_section .benefits_boxs .benefit_box p{
     font-size: 16px;
-    color: #9b9aad;
+    color: #fff;
     line-height: 1.7;
     margin-bottom: 20px;
     max-width: 300px;

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import bannerImg from "../assets/bannerImg.jpg";
 import "../styles/AllProjects.css";
+import { useNavigate } from "react-router-dom";
 
 const projects = [
   {
@@ -93,6 +94,8 @@ const AllProjects = () => {
     project.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  const navigate = useNavigate();
+
   return (
     <>
       {/* Banner Section */}
@@ -132,7 +135,9 @@ const AllProjects = () => {
               <span className="small_text">{project.title}</span>
               <h4>{project.title}</h4>
               <p>{project.description}</p>
-              <button>Learn more</button>
+              <button onClick={() => navigate(`/projectview/${project.id}`)}>
+                Learn more
+              </button>
             </div>
           </div>
         ))}

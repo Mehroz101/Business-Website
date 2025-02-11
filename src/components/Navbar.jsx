@@ -43,16 +43,16 @@ const Navbar = () => {
               onMouseEnter={() => setDropdown(index)}
               onMouseLeave={() => setDropdown(null)}
             >
-              <Link to={item.route} onClick={() => setMenuOpen(false)}>
+              <Link
+                to={item.label !== "Industries" && `${item.route}`}
+                onClick={() => setMenuOpen(false)}
+              >
                 {item.label}
               </Link>
               {dropdown === index && item.label === "Industries" && (
                 <div className="dropdown-menu">
-                  <Link to={item.route + "#Ecom"}> E-Commerce</Link>
-                  <Link to={item.route + "#RealEstate"}> Real Estate</Link>
+                  <Link to={item.route + "#Banking"}>Banking</Link>
                   <Link to={item.route + "#Healthcare"}> Healthcare</Link>
-                  <Link to={item.route + "#Banking"}> Banking</Link>
-                  <Link to={item.route + "#Insurance"}> Insurance</Link>
                 </div>
               )}
             </li>

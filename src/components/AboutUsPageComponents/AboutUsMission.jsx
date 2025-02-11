@@ -1,6 +1,4 @@
 import React from "react";
-import companyImg from "../../assets/bannerImg.jpg";
-import "../../styles/AboutUsPage.css"; // Import the CSS file
 
 const AboutUsMission = ({ Aaoutusmissiondata }) => {
   return (

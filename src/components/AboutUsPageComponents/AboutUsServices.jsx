@@ -1,5 +1,4 @@
 import React from "react";
-import "../../styles/AboutUsPage.css"; // Import the external CSS file
 
 const AboutUsServices = () => {
   const services = [
