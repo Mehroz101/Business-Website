@@ -229,6 +229,97 @@
   height: 50px;
   margin-bottom: 10px;
 }
+
+/* Why Choose Us Section */
+.industories-section {
+  padding: 60px 20px 30px;
+  background-color: rgb(243, 255, 255);
+  text-align: center;
+}
+
+.industories-top {
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  text-align: left;
+}
+
+.industories-left {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.industories-left span {
+  color: var(--secondary-color);
+}
+.industories-left .industories-heading {
+  font-size: 30px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.industories-right .industories-text {
+  font-size: 18px;
+  color: #777;
+  line-height: 1.5;
+}
+.industories-right {
+  flex: 1;
+  min-width: 300px;
+}
+.industories-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.industories-card {
+  /* background-color: #fff; */
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid #dfdfdf;
+  min-width: 200px;
+  max-width: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.industories-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.industories-icon img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.industories-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.industories-description {
+  font-size: 15px;
+  color: #777;
+  line-height: 1.5;
+}
 /* Base styles */
 .about-us-container {
   display: flex;
@@ -305,6 +396,10 @@
   .about-us-image {
     border-radius: 10px;
   }
+  .industories-card {
+    max-width: 100%;
+    padding: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -322,6 +417,13 @@
 
   .about-us-image {
     border-radius: 8px;
+  }
+  .industories-section {
+    padding: 40px 15px;
+  }
+
+  .industories-description {
+    font-size: 0.8rem;
   }
 }
 

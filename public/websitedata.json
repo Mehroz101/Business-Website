@@ -178,7 +178,39 @@
       "title": "Our Mission",
       "description": "Our mission is to revolutionize the industry by offering cutting-edge products and services that are not only innovative but also socially responsible. We aim to exceed customer expectations by fostering a culture of excellence and continuous improvement.",
       "image": "../src/assets/bannerImg.jpg"
-    }
+    },
+    "industories_section": {
+      "title": "Why Choose Us",
+      "description": "Why choose us for your business needs?",
+      
+        "industories_cards": [
+          {
+            "title": "Healthcare",
+            "icon": "../src/assets/healthcare.png",
+            "description": "Providing secure and compliant IT solutions for hospitals, clinics, and healthcare providers."
+          },
+          {
+            "title": "Finance",
+            "icon": "../src/assets/finance.png",
+            "description": "Offering secure financial IT solutions to banks, fintech companies, and accounting firms."
+          },
+          {
+            "title": "Retail & E-commerce",
+            "icon": "../src/assets/retail.png",
+            "description": "Helping retailers and online stores with scalable and secure digital transformation."
+          },
+          {
+            "title": "Education",
+            "icon": "../src/assets/education.png",
+            "description": "Enhancing learning experiences with cloud-based and digital educational solutions."
+          },
+          {
+            "title": "Manufacturing",
+            "icon": "../src/assets/manufacturing.png",
+            "description": "Streamlining production and logistics with modern IT solutions for manufacturing industries."
+          }
+        ]
+      }
   },
   "projects": {
     "title": "Our Work",

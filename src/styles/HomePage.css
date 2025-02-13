@@ -285,24 +285,6 @@
   min-width: 400px;
 }
 
-/* .why-choose-right {
-    text-align: left;
-    max-width: 800px;
-    min-width: 400px;
-  }
-   */
-/* .why-choose-heading {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #333;
-  }
-  
-  .why-choose-text {
-    font-size: 1.2rem;
-    color: #666;
-    line-height: 1.6;
-  }
-   */
 .why-choose-cards {
   display: flex;
   justify-content: center;
@@ -955,12 +937,7 @@
   .why-choose-section {
     padding: 40px 15px;
   }
-  /* .why-choose-heading {
-      font-size: 1.6rem;
-    }
-    .why-choose-text {
-      font-size: 0.9rem;
-    } */
+
   .why-choose-description {
     font-size: 0.8rem;
   }

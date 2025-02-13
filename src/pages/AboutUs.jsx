@@ -11,9 +11,11 @@ import AboutUsGallery from "../components/AboutUsPageComponents/AboutUsGallery";
 import AboutUsBrochure from "../components/AboutUsPageComponents/AboutUsBrochure";
 import WhatWeDo from "../components/AboutUsPageComponents/WhatWeDo";
 import OurHistory from "../components/AboutUsPageComponents/OurHistory";
+import IndustoriesSection from "../components/AboutUsPageComponents/IndustoriesSection";
 const AboutUs = () => {
   const [Aboutusintro, setAboutusintro] = useState({});
   const [Aboutusmission, setAboutusmission] = useState({});
+  const [IndustoriesData, setIndustoriesData] = useState({});
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,6 +27,7 @@ const AboutUs = () => {
         const websitedata = await response.json();
         setAboutusintro(websitedata.aboutuspage.aboutusintro_section);
         setAboutusmission(websitedata.aboutuspage.ourmission_section);
+        setIndustoriesData(websitedata.aboutuspage.industories_section);
         // setAboutuscorevalues(websitedata.aboutuspage.Achievements_section);
         // setAboutusteam(websitedata.aboutuspage.Projects_section);
         // setAboutusservices(websitedata.aboutuspage.why_choose_us_section);
@@ -44,6 +47,7 @@ const AboutUs = () => {
       <AboutUsBrochure />
       <WhatWeDo />
       <OurHistory />
+      <IndustoriesSection industoriesdata={IndustoriesData} />
       {/* <AboutUsIntro aboutusintrodata={Aboutusintro} />
       <AboutUsMission Aaoutusmissiondata={Aboutusmission} />
       <AboutUsCoreValues />

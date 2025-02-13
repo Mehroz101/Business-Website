@@ -100,9 +100,9 @@ const Industries = () => {
         </h1>
         <div className="benefits_boxs">
           {industry?.benefits?.map((benefit, index) => (
-            <div className="benefit_box" key={index}>
-              <h3>{benefit?.title}</h3>
-              <p>{benefit?.description}</p>
+            <div className="benefit_box box_container" key={index}>
+              <h3 className="box_title">{benefit?.title}</h3>
+              <p className="box_description">{benefit?.description}</p>
             </div>
           ))}
         </div>
