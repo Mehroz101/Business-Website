@@ -46,7 +46,7 @@ const Contact = () => {
                 rows={10}
                 className="contactus_textarea"
               ></textarea>
-              <button className="contactus_btn">Send Message</button>
+              <button className="contactus_btn btn">Send Message</button>
             </div>
           </div>
           <div className="contactus_right">

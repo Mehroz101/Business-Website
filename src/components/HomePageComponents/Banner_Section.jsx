@@ -40,7 +40,7 @@ const Banner_Section = ({ bannerdata }) => {
           <p className="banner-title">{bannerdata.small_text}</p>
           <h1 className="banner-text">{bannerdata.tagline}</h1>
           <p className="banner-subtext">{bannerdata.description}</p>
-          <button className="banner-cta">Get Started</button>
+          <button className="banner-cta btn">Get Started</button>
         </div>
       </div>
     </div>

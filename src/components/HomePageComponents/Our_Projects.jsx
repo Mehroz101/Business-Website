@@ -83,8 +83,10 @@ const Our_Projects = ({ projects }) => {
     <section className="our-projects-section">
       <div className="projects-header">
         <div className="heading-container">
-          <p className="subheading">{projects.description}</p>
-          <h2 className="main-heading">{projects.title}</h2>
+          <p className="subheading section_subheading">
+            {projects.description}
+          </p>
+          <h2 className="main-heading section_heading">{projects.title}</h2>
         </div>
         {/* <div className="carousel-controls">
           <Button

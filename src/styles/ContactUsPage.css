@@ -42,7 +42,7 @@
   border: 1px solid #c9c9c9;
   border-radius: 4px;
 }
-.contactus_container .contactus_left .contactus_btn {
+/* .contactus_container .contactus_left .contactus_btn {
   background-color: var(--secondary-color);
   color: #333;
   padding: 10px 20px;
@@ -51,7 +51,7 @@
   font-weight: 600;
   border: none;
   margin-top: 10px;
-}
+} */
 .contactus_container .contactus_right {
   flex: 1;
   display: flex;

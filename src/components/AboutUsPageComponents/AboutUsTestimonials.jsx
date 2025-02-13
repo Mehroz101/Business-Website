@@ -60,7 +60,7 @@ const AboutUsTestimonials = () => {
   const testimonialTemplate = (testimonial) => {
     return (
       <div className="testimonial-card">
-        <div className="avatar-container">
+        <div className="avatar-container ">
           <img
             src={testimonial.avatar || companyImg}
             alt={`${testimonial.name}'s avatar`}

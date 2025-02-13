@@ -4,8 +4,12 @@ import "../../styles/HomePage.css"; // Import external CSS
 const CompanyStats_Section = ({ achievementsdata }) => {
   return (
     <section className="stats-section">
-      <h2 className="stats-heading">{achievementsdata.title}</h2>
-      <p className="stats-subtext">{achievementsdata.description}</p>
+      <h2 className="stats-heading section_heading">
+        {achievementsdata.title}
+      </h2>
+      <p className="stats-subtext section_subheading">
+        {achievementsdata.description}
+      </p>
       <div className="stats-container">
         {achievementsdata?.achievements?.map((achievement) => (
           <div className="stat-box" key={achievement.id}>

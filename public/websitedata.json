@@ -25,14 +25,14 @@
           "image": "../src/assets/computer.png"
         },
         {
-          "title": "Digital Marketing",
-          "description": "Comprehensive digital marketing strategies to grow your brand.",
-          "image": "../src/assets/socialmedia.png"
+          "title": "Mobile App Development",
+          "description": "Custom mobile app development solutions for your business.",
+          "image": "../src/assets/mobileapp.png"
         },
         {
-          "title": "SEO Optimization",
-          "description": "Advanced SEO techniques to boost your website's ranking.",
-          "image": "../src/assets/seo.png"
+          "title": "Automate & Grow",
+          "description": "Efficient, scalable, and custom management software tailored to your needs.",
+          "image": "../src/assets/service.png"
         }
       ]
     },
@@ -84,12 +84,12 @@
       "description": "Why choose us for your business needs?",
       "why_choose_us": [
         {
-          "icon": "../src/assets/experience.png",
+          "icon": "../src/assets/experties.png",
           "title": "Expertise",
           "description": "We have a team of experienced professionals who are passionate about what they do."
         },
         {
-          "icon": "../src/assets/customize.png",
+          "icon": "../src/assets/customized.png",
           "title": "Customization",
           "description": "We tailor our services to meet the unique needs of our clients."
         },
@@ -99,7 +99,7 @@
           "description": "We prioritize quality in all of our services and products."
         },
         {
-          "icon": "../src/assets/help-desk.png",
+          "icon": "../src/assets/customer-service.png",
           "title": "Customer Support",
           "description": "We provide 24/7 customer support to help with all your needs."
         },
@@ -121,12 +121,12 @@
       "description": " Fill out the form below and we'll get back to you within 24 hours. We value your time and will respond as soon as possible.",
       "quote_boxs": [
         {
-          "icon": "../src/assets/shuttle.png",
+          "icon": "../src/assets/boost.png",
           "title": "Boost Your Business",
           "description": "Efficient, scalable, and custom management software tailored to your needs. Let's build something great!"
         },
         {
-          "icon": "../src/assets/robotic-process.png",
+          "icon": "../src/assets/automate.png",
           "title": "Automate & Grow",
           "description": "Fill out the form below and we'll get back to you within 24 hours. We value your time and will respond as soon as possible."
         },

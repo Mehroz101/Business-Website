@@ -13,7 +13,7 @@ const Footer = () => {
         <p className="supportingText">
           Discover the best services to offer your business.
         </p>
-        <button className="button">Get Started</button>
+        <button className="button btn">Get Started</button>
       </div>
       {/* Middle Section */}
       <div className="middleSection">
@@ -57,7 +57,7 @@ const Footer = () => {
             placeholder="Enter your email"
             className="input"
           />
-          <button className="button">Subscribe</button>
+          <button className="button btn">Subscribe</button>
         </div>
       </div>
 

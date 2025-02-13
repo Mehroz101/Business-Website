@@ -131,7 +131,7 @@ const Quote_Section = ({ quotedata }) => {
               className="textarea"
               required
             ></textarea>
-            <button type="submit" className="submit-button">
+            <button type="submit" className="submit-button btn">
               Get Quote
             </button>
           </form>
